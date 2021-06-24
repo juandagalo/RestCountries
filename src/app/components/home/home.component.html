@@ -1,0 +1,18 @@
+<div class="jumbotron jumbotron-fluid mt-5">
+    <div class="container">
+        <h1 class="display-4">Aplicación de prueba para testear el consumo desde APIs</h1>
+        <p class="lead">Esta aplicaión será utilizada para validar las conexiones de apis, para ello se utiliza el api abierto de
+            <a href="http://restcountries.eu/" target="blank"> REST countries</a>, el cual devuelve información de paises dependiento del api utilizado. Para nuestro caso utilizaremos el api https://restcountries.eu/rest/v2/lang/[lang] que devuelve los
+            paises que hablan el idioma especificado en [lang] (es, en, fr...etc)</p>
+
+        <div class="row">
+            <div class="col-4">
+                <div class="list-group" id="list-tab" role="tablist">
+                    <a class="list-group-item list-group-item-action" id="list-espanol-list" data-toggle="list" role="tab" aria-controls="espanol" routerLink="/espanol">Español</a>
+                    <a class="list-group-item list-group-item-action" id="list-ingles-list" data-toggle="list" role="tab" aria-controls="ingles" routerLink="/ingles">Inglés</a>
+                    <a class="list-group-item list-group-item-action" id="list-frances-list" data-toggle="list" role="tab" aria-controls="frances" routerLink="/frances">Frances</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>

@@ -1,0 +1,29 @@
+<div class="ro">
+    <div class="col">
+
+        <table class="table">
+            <thead>
+                <tr>
+                    <th>Pais</th>
+                    <th>Region</th>
+                    <th>Capital</th>
+                    <th>Zona Horaria</th>
+                    <th>Lenguajes</th>
+                </tr>
+            </thead>
+            <tbody>
+                <tr *ngFor="let country of data">
+                    <td>{{country.name}}</td>
+                    <td>{{country.region}}</td>
+                    <td>{{country.capital}}</td>
+                    <td>
+                        <span class="badge badge-pill badge-light" *ngFor=" let timezone of country.timezones ">{{timezone}}</span>
+                    </td>
+                    <td>
+                        <span class="badge badge-pill badge-light" *ngFor=" let language of country.languages ">{{language.name}}</span>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+</div>
